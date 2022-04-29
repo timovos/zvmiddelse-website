@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://www.zvmiddelse.nl/"
+baseurl = "https://www.zvmiddelse.nl/"
 languageCode = "nl-NL"
 
 title = "ZV Middelsé"
