@@ -6,7 +6,7 @@
   </ul>
   <ul class="copyright">
     {{ range .Site.Params.footer.copyright.notice }}
-      <li>{{ .text | markdownify }}</li>
+      <li>{{ .text | markdownify }} <script>document.write(new Date().getFullYear());</script></li>
     {{ end }}
   </ul>
 </footer>

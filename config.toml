@@ -84,4 +84,4 @@ googleAnalytics = ""
     #[params.footer.copyright.notice]
 
       [[params.footer.copyright.notice]]
-        text = "© ZV Middels&eacute; <script>document.write(new Date().getFullYear());</script>"
+        text = "© ZV Middels&eacute;"
