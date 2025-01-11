@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ZV Middelsé</title>
-    <link>https://www.zvmiddelse.nl/tags/</link>
+    <link>https://zvmiddelse.nl/tags/</link>
     <description>Recent content in Tags on ZV Middelsé</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>nl-NL</language>
     
-	<atom:link href="https://www.zvmiddelse.nl/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zvmiddelse.nl/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
