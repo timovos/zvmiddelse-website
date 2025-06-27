@@ -3,6 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --drop-shadow-lg: 0 35px 35px rgba(0, 0, 0, 0.25);
+}
+
+@font-face {
+    font-family: 'Candara-Bold';
+    src: url('/Candara-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @theme inline {
@@ -14,7 +23,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #203c90;
     --foreground: #ededed;
   }
 }
@@ -24,3 +33,50 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.diagonal-clip-bottom {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 40px),
+    0% 100%
+  );
+}
+
+.diagonal-clip-top {
+  clip-path: polygon(
+    0 40px,
+    100% 0,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.diagonal-clip-top-bottom {
+  clip-path: polygon(
+    0 40px,
+    100% 0,
+    100% calc(100% - 40px),
+    0% 100%
+  );
+}
+
+.hexagon {
+  clip-path: polygon(
+          25% 5%,
+          75% 5%,
+          100% 50%,
+          75% 95%,
+          25% 95%,
+          0% 50%
+  );
+}
+
+.hexagon-button {
+  transition: transform 0.2s ease;
+}
+
+.hexagon-button:hover {
+  transform: scale(1.05);
+}
+
