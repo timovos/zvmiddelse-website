@@ -6,19 +6,11 @@
   --drop-shadow-lg: 0 35px 35px rgba(0, 0, 0, 0.25);
 }
 
-@font-face {
-    font-family: 'Candara-Bold';
-    src: url('/Candara-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-raleway);
+  --font-mono: monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,7 +23,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-raleway), Arial, Helvetica, sans-serif;
 }
 
 .diagonal-clip-bottom {
@@ -79,4 +71,3 @@ body {
 .hexagon-button:hover {
   transform: scale(1.05);
 }
-

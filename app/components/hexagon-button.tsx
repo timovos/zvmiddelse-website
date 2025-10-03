@@ -31,11 +31,17 @@ export default function HexagonButton({
         className="w-full h-full absolute inset-0 object-cover"
       />
       <div className="absolute inset-0 bg-black/50 z-0" />
-      <span className="relative z-10 text-white font-extrabold text-3xl drop-shadow-lg tracking-wide uppercase px-4 py-2">
+      <span
+        className="relative z-10 text-white font-extrabold text-3xl drop-shadow-lg tracking-wide uppercase px-4 py-2"
+        style={{ fontFamily: "var(--font-raleway)" }}
+      >
         {text}
       </span>
       {subtext && (
-        <span className="relative z-10 text-white text-lg opacity-80 drop-shadow-sm">
+        <span
+          className="relative z-10 text-white text-lg opacity-80 drop-shadow-sm"
+          style={{ fontFamily: "var(--font-raleway)" }}
+        >
           {subtext}
         </span>
       )}
@@ -48,7 +54,11 @@ export default function HexagonButton({
       style={{ width, height }}
     >
       {href ? (
-        <a href={href} className="w-full h-full flex items-center justify-center" tabIndex={0}>
+        <a
+          href={href}
+          className="w-full h-full flex items-center justify-center"
+          tabIndex={0}
+        >
           {ButtonContent}
         </a>
       ) : (

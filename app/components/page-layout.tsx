@@ -14,11 +14,14 @@ export default function PageLayout({ children }: { children: ReactNode }) {
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-20">
           <h1
             className="text-white text-8xl uppercase font-extrabold drop-shadow-lg"
-            style={{ fontFamily: "Candara-Bold, Candara, Arial, sans-serif" }}
+            style={{ fontFamily: "var(--font-raleway)" }}
           >
             ZV Middelsé
           </h1>
-          <p className="italic text-[color:#ffe43a] text-xl mt-2 drop-shadow-md">
+          <p
+            className="italic text-[color:#ffe43a] text-xl mt-2 drop-shadow-md"
+            style={{ fontFamily: "var(--font-raleway)" }}
+          >
             De zwemvereniging in Stiens &amp; omstreken
           </p>
         </div>
