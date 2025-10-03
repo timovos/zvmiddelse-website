@@ -12,12 +12,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-background opacity-60 pointer-events-none z-10 diagonal-clip-top-bottom mt-20" />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-20 mt-24">
           <h1
-            className="text-white text-8xl uppercase font-extrabold drop-shadow-lg"
+            className="text-white text-6xl sm:text-8xl lg:text-9xl uppercase font-extrabold drop-shadow-lg -mb-4"
             style={{ fontFamily: "Candara-Bold, Candara, Arial, sans-serif" }}
           >
             ZV Middelsé
           </h1>
-          <p className="italic text-[color:#ffe43a] text-xl mt-2 drop-shadow-md">
+          <p className="italic text-[color:#ffe43a] sm:text-s text-m lg:text-2xl drop-shadow-md mt-1">
             De zwemvereniging in Stiens &amp; omstreken
           </p>
         </div>

@@ -9,12 +9,12 @@ interface HexagonButtonProps {
 }
 
 export default function HexagonButton({
-                                        size = 300,
-                                        className = "",
-                                        text,
-                                        subtext,
-                                        href,
-                                      }: HexagonButtonProps) {
+  size = 300,
+  className = "",
+  text,
+  subtext,
+  href,
+}: HexagonButtonProps) {
   const width = size;
   const height = size / 0.966;
 
