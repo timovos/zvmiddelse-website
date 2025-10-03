@@ -79,9 +79,9 @@ export default function Home() {
           <img
             src="/zvm-beeldlogo.svg"
             alt="ZV Middelsé beeldlogo"
-            className="mx-auto -mb-12 h-32"
+            className="mx-auto -mb-4 h-32"
           />
-          <nav className="flex gap-6 mt-8">
+          <nav className="flex gap-6 mt-8 justify-center">
             <a href="/about" className="hover:underline">
               Over
             </a>
