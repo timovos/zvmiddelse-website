@@ -6,9 +6,8 @@ export default [
   {
     files: ["**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
     rules: {
-      ...eslintPluginReactRecommended.configs.flat.recommended.rules,
-      'react/react-in-jsx-scope': 'off',
-      'react/prop-types': 'off',
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
     },
   },
   {
