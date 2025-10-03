@@ -1,19 +1,53 @@
-import eslint from "@eslint/js";
-import tseslint from "typescript-eslint";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import globals from "globals"
+import pluginJs from "@eslint/js"
+import tseslint from "typescript-eslint"
+import tailwind from "eslint-plugin-tailwindcss"
+import { FlatCompat } from "@eslint/eslintrc"
 
-export default [
+const compat = new FlatCompat({
+  // import.meta.dirname is available after Node.js v20.11.0
+  baseDirectory: import.meta.dirname,
+})
+
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
+  { ignores: [".next/**", "public/**", "next.config.js", "postcss.config.js"] },
+  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...tailwind.configs["flat/recommended"],
+  ...compat.config({
+    extends: ["next"],
+    settings: {
+      next: {
+        rootDir: ".",
+      },
+    },
+  }),
+  ...compat.config({
+    extends: ["plugin:drizzle/all"],
+  }),
   {
-    files: ["**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
     rules: {
+      "no-undef": "error",
       "react/react-in-jsx-scope": "off",
-      "react/prop-types": "off",
+      "tailwindcss/no-custom-classname": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error", // or "error"
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
     },
   },
   {
-    files: ["**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}"],
+    files: ["**/*.{jsx,tsx}"],
+    rules: {
+      "no-console": "warn",
+    },
   },
-  eslint.configs.recommended,
-  eslintPluginPrettierRecommended,
-  ...tseslint.configs.recommended,
-];
+]
+export default config
