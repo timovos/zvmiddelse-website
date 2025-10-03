@@ -31,11 +31,11 @@ export default function HexagonButton({
         className="w-full h-full absolute inset-0 object-cover"
       />
       <div className="absolute inset-0 bg-black/50 z-0" />
-      <span className="relative z-10 text-white font-extrabold text-3xl drop-shadow-lg tracking-wide uppercase">
+      <span className="relative z-10 text-white font-extrabold text-3xl drop-shadow-lg tracking-wide uppercase px-4 py-2">
         {text}
       </span>
       {subtext && (
-        <span className="relative z-10 text-white text-lg opacity-80 drop-shadow-sm mt-1">
+        <span className="relative z-10 text-white text-lg opacity-80 drop-shadow-sm">
           {subtext}
         </span>
       )}

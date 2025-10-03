@@ -31,26 +31,61 @@ export default function Home() {
             className="sm:-translate-y-2"
             href="/minipolo"
           />
-          <HexagonButton text="Dolfijntjes" className="sm:translate-y-3" />
-          <HexagonButton text="Jeugd waterpolo" className="sm:-translate-y-4" />
-          <HexagonButton text="Wedstrijd-zwemmen" className="sm:-translate-y-2" />
-          <HexagonButton text="Heren & dames waterpolo" className="sm:translate-y-3" />
-          <HexagonButton text="Triatlon / conditie / techniek" className="sm:-translate-y-4" />
-          <HexagonButton text="Clubhistorie" className="sm:-translate-y-2" />
-          <HexagonButton text="Sponsoring" className="sm:translate-y-3" />
+          <HexagonButton
+            text="Dolfijntjes"
+            subtext="Zwemles voor de jongsten"
+            className="sm:translate-y-3"
+            href="/dolfijntjes"
+          />
+          <HexagonButton
+            text="Jeugd waterpolo"
+            subtext="Voor jeugdleden"
+            className="sm:-translate-y-4"
+            href="/jeugd-waterpolo"
+          />
+          <HexagonButton
+            text="Wedstrijd-zwemmen"
+            subtext="Zwemwedstrijden"
+            className="sm:-translate-y-2"
+            href="/wedstrijdzwemmen"
+          />
+          <HexagonButton
+            text="Heren & dames waterpolo"
+            subtext="Senioren teams"
+            className="sm:translate-y-3"
+            href="/heren-dames-waterpolo"
+          />
+          <HexagonButton
+            text="Triatlon / conditie / techniek"
+            subtext="Voor alle niveaus"
+            className="sm:-translate-y-4"
+            href="/triatlon-conditie-techniek"
+          />
+          <HexagonButton
+            text="Clubhistorie"
+            subtext="Geschiedenis van de club"
+            className="sm:-translate-y-2"
+            href="/clubhistorie"
+          />
+          <HexagonButton
+            text="Sponsoring"
+            subtext="Steun onze vereniging"
+            className="sm:translate-y-3"
+            href="/sponsoring"
+          />
         </main>
       </div>
       <footer className="w-full h-42 diagonal-clip-top p-10 bg-black opacity-30">
         <div className="max-w-4xl mx-auto">
           <nav className="flex gap-6 mt-8">
             <a href="/about" className="hover:underline">
-              About
+              Over
             </a>
             <a href="/contact" className="hover:underline">
               Contact
             </a>
             <a href="/privacy" className="hover:underline">
-              Privacy Policy
+              Privacybeleid
             </a>
           </nav>
         </div>
