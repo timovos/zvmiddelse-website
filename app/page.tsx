@@ -27,49 +27,49 @@ export default function Home() {
           <HexagonButton
             text="Minipolo"
             subtext="Onder 8"
-            className="sm:-translate-y-2"
+            className="sm:-translate-y-10"
             href="/minipolo"
           />
           <HexagonButton
             text="Dolfijntjes"
             subtext="Zwemles voor de jongsten"
-            className="sm:translate-y-3"
+            className="sm:translate-y-30"
             href="/dolfijntjes"
           />
           <HexagonButton
             text="Jeugd waterpolo"
             subtext="Voor jeugdleden"
-            className="sm:-translate-y-4"
+            className="sm:-translate-y-10"
             href="/jeugd-waterpolo"
           />
           <HexagonButton
             text="Wedstrijd-zwemmen"
             subtext="Zwemwedstrijden"
-            className="sm:-translate-y-2"
+            className="sm:translate-y-30"
             href="/wedstrijdzwemmen"
           />
           <HexagonButton
             text="Heren & dames waterpolo"
             subtext="Senioren teams"
-            className="sm:translate-y-3"
+            className="sm:-translate-y-10"
             href="/heren-dames-waterpolo"
           />
           <HexagonButton
             text="Triatlon / conditie / techniek"
             subtext="Voor alle niveaus"
-            className="sm:-translate-y-4"
+            className="sm:translate-y-30"
             href="/triatlon-conditie-techniek"
           />
           <HexagonButton
             text="Clubhistorie"
             subtext="Geschiedenis van de club"
-            className="sm:-translate-y-2"
+            className="sm:-translate-y-10"
             href="/clubhistorie"
           />
           <HexagonButton
             text="Sponsoring"
             subtext="Steun onze vereniging"
-            className="sm:translate-y-3"
+            className="sm:translate-y-30"
             href="/sponsoring"
           />
         </main>

@@ -18,6 +18,12 @@
     --background: #203c90;
     --foreground: #ededed;
   }
+
+  html {
+    color-scheme: light;
+    background: #fff;
+    color: #000;
+  }
 }
 
 body {
