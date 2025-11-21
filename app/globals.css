@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #203c90;
+  --foreground: #ededed;
   --drop-shadow-lg: 0 35px 35px rgba(0, 0, 0, 0.25);
 }
 
@@ -11,19 +11,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-raleway);
   --font-mono: monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #203c90;
-    --foreground: #ededed;
-  }
-
-  html {
-    color-scheme: light;
-    background: #fff;
-    color: #000;
-  }
 }
 
 body {

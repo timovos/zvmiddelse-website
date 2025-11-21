@@ -1,4 +1,3 @@
-import HexagonButton from "@/app/components/hexagon-button";
 import RectangleButton from "@/app/components/rectangle-button";
 
 export default function Home() {
