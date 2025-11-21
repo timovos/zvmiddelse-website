@@ -1,4 +1,3 @@
-import HexagonButton from "@/app/components/hexagon-button";
 import RectangleButton from "@/app/components/rectangle-button";
 
 export default function Home() {
@@ -27,14 +26,14 @@ export default function Home() {
       font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center row-start-2 w-full z-11">
           <RectangleButton
-            text="Minipolo"
-            subtext="Onder 8"
-            href="/minipolo"
+            text="Dolfijntjes"
+            subtext="Direct na het B-diploma"
+            href="/dolfijntjes"
           />
           <RectangleButton
-            text="Dolfijntjes"
-            subtext="Zwemles voor de jongsten"
-            href="/dolfijntjes"
+            text="Minipolo"
+            subtext="Waterpolo onder 8"
+            href="/minipolo"
           />
           <RectangleButton
             text="Jeugd waterpolo"
@@ -42,7 +41,7 @@ export default function Home() {
             href="/jeugd-waterpolo"
           />
           <RectangleButton
-            text="Wedstrijd-zwemmen"
+            text="Wedstrijdzwemmen"
             subtext="Zwemwedstrijden"
             href="/wedstrijdzwemmen"
           />

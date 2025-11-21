@@ -33,12 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="color-scheme" content="light dark" />
-        <meta name="supported-color-schemes" content="light" />
-      </head>
       <body
-        className={`font-[var(--font-raleway)] ${raleway.variable} antialiased`}
+        className={`font-[var(--font-raleway)] ${raleway.variable} antialiased bg-white`}
       >
         {children}
       </body>
