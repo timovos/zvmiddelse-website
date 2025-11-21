@@ -50,7 +50,8 @@ export default function HexagonButton({
 
   return (
     <div
-      className={`hexagon bg-[#ffe43a] flex items-center justify-center hexagon-button transition-transform duration-200 shadow-lg ${className} cursor-pointer`}
+      className={`hexagon bg-[#ffe43a] flex items-center justify-center hexagon-button transition-transform 
+      duration-200 shadow-lg ${className} cursor-pointer`}
       style={{ width, height }}
     >
       {href ? (

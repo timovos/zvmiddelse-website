@@ -20,6 +20,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  other: {
+    "color-scheme": "light dark",
+    "supported-color-schemes": "light",
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="color-scheme" content="light dark" />
+        <meta name="supported-color-schemes" content="light" />
+      </head>
       <body
         className={`font-[var(--font-raleway)] ${raleway.variable} antialiased`}
       >
