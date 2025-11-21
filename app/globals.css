@@ -77,3 +77,12 @@ body {
 .hexagon-button:hover {
   transform: scale(1.05);
 }
+
+section p a {
+  text-decoration: underline;
+  color: #2563eb; /* Tailwind blue-700 */
+  transition: color 0.2s;
+}
+section p a:hover {
+  color: #1e40af; /* Tailwind blue-900 */
+}

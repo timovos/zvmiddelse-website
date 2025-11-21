@@ -1,4 +1,5 @@
 import HexagonButton from "@/app/components/hexagon-button";
+import RectangleButton from "@/app/components/rectangle-button";
 
 export default function Home() {
   return (
@@ -23,54 +24,46 @@ export default function Home() {
       </header>
       <div className="bg-black opacity-30 h-[60vh] min-w-screen mt-60 absolute z-10 diagonal-clip-top-bottom"></div>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20
-      max-w-300 font-[family-name:var(--font-geist-sans)]">
+      font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center row-start-2 w-full z-11">
-          <HexagonButton
+          <RectangleButton
             text="Minipolo"
             subtext="Onder 8"
-            className="sm:-translate-y-10"
             href="/minipolo"
           />
-          <HexagonButton
+          <RectangleButton
             text="Dolfijntjes"
             subtext="Zwemles voor de jongsten"
-            className="sm:translate-y-30 md:translate-y-30 lg:translate-y-30"
             href="/dolfijntjes"
           />
-          <HexagonButton
+          <RectangleButton
             text="Jeugd waterpolo"
             subtext="Voor jeugdleden"
-            className="sm:-translate-y-10"
             href="/jeugd-waterpolo"
           />
-          <HexagonButton
+          <RectangleButton
             text="Wedstrijd-zwemmen"
             subtext="Zwemwedstrijden"
-            className="sm:translate-y-30 md:-translate-y-10 lg:-translate-y-10"
             href="/wedstrijdzwemmen"
           />
-          <HexagonButton
+          <RectangleButton
             text="Heren & dames waterpolo"
             subtext="Senioren teams"
-            className="sm:-translate-y-10 md:translate-y-30 lg:translate-y-30"
             href="/heren-dames-waterpolo"
           />
-          <HexagonButton
+          <RectangleButton
             text="Triatlon / conditie / techniek"
             subtext="Voor alle niveaus"
-            className="sm:translate-y-30 md:-translate-y-10 lg:-translate-y-10"
             href="/triatlon-conditie-techniek"
           />
-          <HexagonButton
+          <RectangleButton
             text="Clubhistorie"
             subtext="Geschiedenis van de club"
-            className="sm:-translate-y-10 md:-translate-x-40 lg:-translate-x-40"
             href="/clubhistorie"
           />
-          <HexagonButton
+          <RectangleButton
             text="Sponsoring"
             subtext="Steun onze vereniging"
-            className="sm:translate-y-30 md:translate-x-40 md:-translate-y-10 lg:translate-x-40 lg:-translate-y-10"
             href="/sponsoring"
           />
         </main>
