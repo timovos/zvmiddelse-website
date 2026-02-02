@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import React from "react";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -34,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-[var(--font-raleway)] ${raleway.variable} antialiased bg-white`}
+        className={`font-[var(--font-raleway)] ${raleway.variable} bg-white antialiased`}
       >
         {children}
       </body>

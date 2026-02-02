@@ -25,9 +25,6 @@ const config = [
       },
     },
   }),
-  ...compat.config({
-    extends: ["plugin:drizzle/all"],
-  }),
   {
     rules: {
       "no-undef": "error",
