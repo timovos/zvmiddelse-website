@@ -8,8 +8,17 @@ export default function TriatlonConditieTechniek() {
         <p className="text-lg text-gray-800 mb-4">
           Voor iedereen die zijn conditie en zwemtechniek wil verbeteren, of zich wil voorbereiden op een triatlon.
         </p>
-        <p className="text-gray-700">
-          Voorbeeld: Tijdens de trainingen wordt gewerkt aan uithoudingsvermogen, kracht en techniek.
+      </section>
+
+      <section className="bg-white/80 rounded-lg shadow-lg p-8">
+        <h2 className="text-2xl font-bold mb-2 text-[#1a237e]">Trainingen</h2>
+        <p className="mb-4 text-gray-800">
+          Op woensdagavond traint de triatlongroep / recreanten van 20.30u tot 21.30u in Stiens.
+        </p>
+
+        <h2 className="text-2xl font-bold mb-2 text-[#1a237e]">Contributie</h2>
+        <p className="mb-4 text-gray-800">
+          De contributie bedraagt €52,06 per kwartaal.
         </p>
       </section>
     </PageLayout>

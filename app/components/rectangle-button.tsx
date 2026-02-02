@@ -10,7 +10,7 @@ interface RectangleButtonProps {
 
 const RectangleButton: React.FC<RectangleButtonProps> = ({ text, subtext, href, className }) => (
   <a
-    className={`flex flex-col items-center justify-center px-8 py-6 rounded-2xl border-8 border-yellow-400 shadow-lg hover:bg-yellow-50 transition-colors duration-200 text-center w-80 h-40 bg-center bg-cover relative overflow-hidden ${className}`}
+    className={`flex flex-col items-center justify-center px-8 py-6 rounded-2xl border-8 border-white-400 shadow-lg hover:bg-yellow-50 transition-colors duration-200 text-center w-80 h-40 bg-center bg-cover relative overflow-hidden ${className}`}
     style={{ backgroundImage: "url('/header.jpg')", textDecoration: "none" }}
     href={href}
   >

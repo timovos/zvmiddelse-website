@@ -1,30 +1,22 @@
 import RectangleButton from "@/app/components/rectangle-button";
+import PageHeader from "@/app/components/page-header";
 
 export default function Home() {
   return (
     <>
-      <header className="relative w-full h-96 overflow-hidden">
-        <img
-          src="header.jpg"
-          alt="Header"
-          className="w-full h-full object-cover diagonal-clip-bottom"
-        />
-        <div className="absolute inset-0 bg-background opacity-60 pointer-events-none z-10 diagonal-clip-top-bottom mt-20" />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-20 mt-4">
-          <img
-            src="/zvm-logo.svg"
-            alt="ZV Middelsé logo"
-            className="w-auto h-36 sm:h-42 lg:h-54 mb-1 drop-shadow-lg"
-          />
-          <p className="italic text-[color:#ffe43a] sm:text-s text-m lg:text-2xl drop-shadow-md">
-            De zwemvereniging in Stiens &amp; omstreken
-          </p>
-        </div>
-      </header>
+      <PageHeader/>
       <div className="bg-black opacity-30 h-[60vh] min-w-screen mt-60 absolute z-10 diagonal-clip-top-bottom"></div>
+
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20
       font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center row-start-2 w-full z-11">
+        <main className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center row-start-2 max-w-2/3 z-11">
+          <div className="w-full basis-full pl-10 pr-10 mt-4 mb-6">
+            <p>
+              Welkom op de officiële website van ZV Middelsé. Op deze site kunt u informatie vinden over de afdeling wedstrijdzwemmen van ZV Middelsé, maar ook wat er ondernomen wordt op gebied van waterpolo.
+              <br/><br/>
+              Binnen onze club vinden we niet alleen prestatie belangrijk, maar ook gezelligheid en plezier. Wij geloven dat als onze leden plezier hebben in de zwemsport, de gezelligheid en prestaties vanzelf volgen.
+            </p>
+          </div>
           <RectangleButton
             text="Dolfijntjes"
             subtext="Direct na het B-diploma"
@@ -56,9 +48,9 @@ export default function Home() {
             href="/triatlon-conditie-techniek"
           />
           <RectangleButton
-            text="Clubhistorie"
-            subtext="Geschiedenis van de club"
-            href="/clubhistorie"
+            text="Contact en info"
+            subtext="En privacy"
+            href="/contact-en-info"
           />
           <RectangleButton
             text="Sponsoring"

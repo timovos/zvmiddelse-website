@@ -1,11 +1,7 @@
-"use client";
-
 import PageLayout from "@/app/components/page-layout";
-import { useState } from "react";
+import LidWorden from "@/app/components/lid-worden";
 
 export default function Minipolo() {
-  const [showJoinInfo, setShowJoinInfo] = useState(false);
-
   return (
     <PageLayout>
       <section className="bg-white/80 rounded-lg shadow-lg p-8">
@@ -33,20 +29,7 @@ export default function Minipolo() {
         </p>
         <h2 className="text-2xl font-bold mb-2 text-[#1a237e]">Proeftraining & Lid worden</h2>
         <p className="mb-4 text-gray-800">
-          Proeftraining eerste 3x gratis, lid worden?{' '}
-          <button
-            type="button"
-            className="underline text-blue-700 hover:text-blue-900 cursor-pointer bg-transparent border-none p-0"
-            onClick={() => setShowJoinInfo((v) => !v)}
-          >
-            Meld je hier aan
-          </button>
-          {showJoinInfo && (
-            <span className="block mt-3 p-4 rounded-lg bg-yellow-50 text-gray-900 shadow-inner">
-              Vul het <a href="/contact" className="underline text-blue-700 hover:text-blue-900">contactformulier</a> in op onze website of stuur een e-mail naar <a href="mailto:info@zvmiddelse.nl" className="underline text-blue-700 hover:text-blue-900">info@zvmiddelse.nl</a>.
-              Je ontvangt van ons alle informatie over lid worden, proeftrainingen en contributie. We nemen zo snel mogelijk contact met je op!
-            </span>
-          )}
+          Proeftraining eerste 3x gratis, lid worden? <LidWorden/>
         </p>
         <h2 className="text-2xl font-bold mb-2 text-[#1a237e]">Extra informatie</h2>
         <p className="mb-4 text-gray-800">

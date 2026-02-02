@@ -4,6 +4,9 @@
   --background: #203c90;
   --foreground: #ededed;
   --drop-shadow-lg: 0 35px 35px rgba(0, 0, 0, 0.25);
+  --heading-color: #1a237e;
+  /* Fallback for editor validation; the real font is provided via Next/font */
+  --font-raleway: "Raleway";
 }
 
 @theme inline {
@@ -17,6 +20,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-raleway), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  h2 {
+    @apply text-3xl font-bold mb-4;
+    color: var(--heading-color);
+  }
+
+  h3 {
+    @apply mt-6 mb-3 text-lg sm:text-xl font-semibold;
+    color: var(--heading-color);
+  }
 }
 
 .diagonal-clip-bottom {
