@@ -3,19 +3,19 @@ import PageLayout from "@/app/components/page-layout";
 export default function Clubhistorie() {
   return (
     <PageLayout>
-      <section className="bg-white/80 rounded-lg shadow-lg p-8">
-        <h2 className="text-3xl font-bold mb-4 text-[#1a237e]">
+      <section className="rounded-lg bg-white/80 p-8 shadow-lg">
+        <h2 className="mb-4 text-3xl font-bold text-[#1a237e]">
           Contact, info en privacy
         </h2>
-        <p className="text-lg text-gray-800 mb-4">
+        <p className="mb-4 text-lg text-gray-800">
           Op deze pagina vindt u belangrijke informatie over hoe wij omgaan met
           uw gegevens en hoe u contact met ons kunt opnemen.
         </p>
       </section>
 
-      <section className="bg-white/80 rounded-lg shadow-lg p-8">
+      <section className="rounded-lg bg-white/80 p-8 shadow-lg">
         <h2>Bestuur</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="mb-10 overflow-x-auto">
           <table className="w-full border-collapse text-left text-gray-800">
             <thead>
               <tr className="border-b border-black/10">

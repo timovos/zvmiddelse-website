@@ -5,13 +5,12 @@ export default function Home() {
   return (
     <>
       <PageHeader/>
-      <div className="bg-black opacity-30 h-[60vh] min-w-screen mt-60 absolute z-10 diagonal-clip-top-bottom"></div>
+      <div className="diagonal-clip-top-bottom absolute z-10 mt-60 h-[60vh] min-w-screen bg-black opacity-30"></div>
 
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20
-      font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col sm:flex-row flex-wrap gap-8 justify-center items-center row-start-2 max-w-2/3 z-11">
-          <div className="w-full basis-full pl-10 pr-10 mt-4 mb-6">
-            <p>
+      <div className="grid min-h-screen grid-rows-[20px_1fr_20px] place-items-center pb-20 font-[family-name:var(--font-geist-sans)]">
+        <main className="z-11 row-start-2 flex max-w-200 flex-col flex-wrap items-center justify-center gap-8 sm:flex-row">
+          <div className="mt-4 mb-6 w-full basis-full pr-10 pl-10">
+            <p className="mr-auto ml-auto max-w-200">
               Welkom op de officiële website van ZV Middelsé. Op deze site kunt u informatie vinden over de afdeling wedstrijdzwemmen van ZV Middelsé, maar ook wat er ondernomen wordt op gebied van waterpolo.
               <br/><br/>
               Binnen onze club vinden we niet alleen prestatie belangrijk, maar ook gezelligheid en plezier. Wij geloven dat als onze leden plezier hebben in de zwemsport, de gezelligheid en prestaties vanzelf volgen.
@@ -59,14 +58,14 @@ export default function Home() {
           />
         </main>
       </div>
-      <footer className="w-full diagonal-clip-top p-10 bg-black opacity-30">
-        <div className="max-w-4xl mx-auto">
+      <footer className="diagonal-clip-top w-full bg-black p-10 opacity-30">
+        <div className="mx-auto max-w-4xl">
           <img
             src="/zvm-beeldlogo.svg"
             alt="ZV Middelsé beeldlogo"
             className="mx-auto -mb-4 h-32"
           />
-          <nav className="flex gap-6 mt-8 justify-center">
+          <nav className="mt-8 flex justify-center gap-6">
             <a href="/about" className="hover:underline">
               Over
             </a>

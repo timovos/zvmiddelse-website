@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 interface RectangleButtonProps {
@@ -10,14 +9,15 @@ interface RectangleButtonProps {
 
 const RectangleButton: React.FC<RectangleButtonProps> = ({ text, subtext, href, className }) => (
   <a
-    className={`flex flex-col items-center justify-center px-8 py-6 rounded-2xl border-8 border-white-400 shadow-lg hover:bg-yellow-50 transition-colors duration-200 text-center w-80 h-40 bg-center bg-cover relative overflow-hidden ${className}`}
+    className={`border-white-400 relative flex h-40 w-80 flex-col items-center justify-center overflow-hidden rounded-2xl border-8 bg-cover bg-center px-8 py-6 text-center shadow-lg transition-colors duration-200 hover:bg-yellow-50 ${className}`}
     style={{ backgroundImage: "url('/header.jpg')", textDecoration: "none" }}
     href={href}
   >
-    <div className="absolute inset-0 bg-black/60 pointer-events-none" />
-    <span className="font-bold text-xl text-white mb-1 relative z-10">{text}</span>
-    {subtext && <span className="text-sm text-white relative z-10">{subtext}</span>}
+    <div className="pointer-events-none absolute inset-0 bg-black/60" />
+    <span className="relative z-10 mb-1 text-xl font-bold text-white">{text}</span>
+    {subtext && <span className="relative z-10 text-sm text-white">{subtext}</span>}
   </a>
 );
 
 export default RectangleButton;
+
