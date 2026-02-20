@@ -10,7 +10,10 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "ZV Middelsé",
+  title: {
+    default: "ZV Middelsé",
+    template: "ZV Middelsé - %s",
+  },
   description: "De zwemvereniging in Stiens & omstreken",
   icons: {
     icon: [

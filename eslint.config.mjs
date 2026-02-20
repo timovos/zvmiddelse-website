@@ -24,14 +24,20 @@ const config = [
         rootDir: ".",
       },
     },
-  }),
+  }).filter(Boolean),
   {
+    settings: {
+      tailwindcss: {
+        config: {},
+        cssFiles: ["app/globals.css"],
+      },
+    },
     rules: {
       "no-undef": "error",
       "react/react-in-jsx-scope": "off",
       "tailwindcss/no-custom-classname": "off",
       "@typescript-eslint/no-unused-vars": [
-        "error", // or "error"
+        "error",
         {
           argsIgnorePattern: "^_",
           varsIgnorePattern: "^_",

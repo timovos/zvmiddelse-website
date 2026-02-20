@@ -1,11 +1,15 @@
 import PageLayout from "@/app/components/page-layout";
+import ContactFormButton from "@/app/components/contact-form-button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Sponsoring" };
 
 export default function Sponsoring() {
   return (
     <PageLayout>
-      <section className="bg-white/80 rounded-lg shadow-lg p-8">
+      <section className="rounded-lg bg-white/80 p-8 shadow-lg">
         <h2>Sponsoring</h2>
-        <p className="text-lg text-gray-800 mb-4">
+        <p className="mb-4 text-lg text-gray-800">
           De Club van 50 bestaat uit oud-leden, ouders, bekenden en bedrijven die
           Zwem- en waterpolo vereniging Middelsé uit Stiens een warm hart
           toedragen. Om de vereniging financieel te ondersteunen wordt er
@@ -15,10 +19,10 @@ export default function Sponsoring() {
         </p>
       </section>
 
-      <section className="bg-white/80 rounded-lg shadow-lg p-8 text-gray-800">
+      <section className="rounded-lg bg-white/80 p-8 text-gray-800 shadow-lg">
         <h2>Wat krijgt u?</h2>
         <p>Wat krijgt u terug als u lid wordt van de Club van 50?</p>
-        <ul className="mt-4 list-disc pl-6 mb-6">
+        <ul className="mt-4 mb-6 list-disc pl-6">
           <li className="leading-relaxed">
             Uiteraard eeuwige roem en dankbaarheid vanuit de vereniging.
           </li>
@@ -52,17 +56,16 @@ export default function Sponsoring() {
           invullen en ondertekenen. U kunt het formulier hier downloaden.
         </p>
         <p className="">
-          De Club van 50 wordt gecoördineerd door&nbsp;Emiel Deinum.
-          <br />
           Voor vragen en lid worden kunt u contact met hen opnemen via:
           <br />
           <a href="mailto:sponsorcommissie@zvmiddelse.nl">
             sponsorcommissie@zvmiddelse.nl
           </a>
         </p>
+        <ContactFormButton/>
       </section>
 
-      <section className="bg-white/80 rounded-lg shadow-lg p-8 text-gray-800">
+      <section className="rounded-lg bg-white/80 p-8 text-gray-800 shadow-lg">
         <h2>Wat wordt er met het geld gedaan?</h2>
         <p>
           Belangrijk is om aan te geven waar het geld concreet voor zal worden

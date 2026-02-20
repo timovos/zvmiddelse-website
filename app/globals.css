@@ -22,16 +22,18 @@ body {
   font-family: var(--font-raleway), Arial, Helvetica, sans-serif;
 }
 
-@layer base {
-  h2 {
-    @apply text-3xl font-bold mb-4;
-    color: var(--heading-color);
-  }
+section, section p {
+  color: #1f2937; /* gray-800 */
+}
 
-  h3 {
-    @apply mt-6 mb-3 text-lg sm:text-xl font-semibold;
-    color: var(--heading-color);
-  }
+h2 {
+  @apply text-3xl font-bold mb-4;
+  color: var(--heading-color);
+}
+
+h3 {
+  @apply mt-6 mb-3 text-lg sm:text-xl font-semibold;
+  color: var(--heading-color);
 }
 
 .diagonal-clip-bottom {
@@ -61,25 +63,6 @@ body {
   );
 }
 
-.hexagon {
-  clip-path: polygon(
-          25% 5%,
-          75% 5%,
-          100% 50%,
-          75% 95%,
-          25% 95%,
-          0% 50%
-  );
-}
-
-.hexagon-button {
-  transition: transform 0.2s ease;
-}
-
-.hexagon-button:hover {
-  transform: scale(1.05);
-}
-
 section p a {
   text-decoration: underline;
   color: #2563eb; /* Tailwind blue-700 */
@@ -88,3 +71,23 @@ section p a {
 section p a:hover {
   color: #1e40af; /* Tailwind blue-900 */
 }
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(-3deg); }
+  30% { transform: rotate(2deg); }
+  45% { transform: rotate(-1.5deg); }
+  60% { transform: rotate(1deg); }
+  75% { transform: rotate(-0.5deg); }
+}
+
+.hover-wiggle:hover {
+  animation: wiggle 0.6s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+

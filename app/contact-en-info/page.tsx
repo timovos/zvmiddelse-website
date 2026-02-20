@@ -1,4 +1,10 @@
 import PageLayout from "@/app/components/page-layout";
+import TrustContactForm from "@/app/components/trust-contact-form";
+import ContactForm from "@/app/components/contact-form";
+import ContactFormButton from "@/app/components/contact-form-button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Contact en Info" };
 
 export default function Clubhistorie() {
   return (
@@ -7,16 +13,31 @@ export default function Clubhistorie() {
         <h2 className="mb-4 text-3xl font-bold text-[#1a237e]">
           Contact, info en privacy
         </h2>
-        <p className="mb-4 text-lg text-gray-800">
+        <p className="mb-4 text-lg">
           Op deze pagina vindt u belangrijke informatie over hoe wij omgaan met
           uw gegevens en hoe u contact met ons kunt opnemen.
         </p>
       </section>
 
       <section className="rounded-lg bg-white/80 p-8 shadow-lg">
+        <h2 className="mb-4 text-3xl font-bold text-[#1a237e]">
+          Adres zwembad
+        </h2>
+        <p className="mb-4 text-lg">
+          Wij trainen in ons thuisbad ‘it Gryn’ in Stiens. Hier worden ook zwemwedstrijden gehouden en waterpolowedstrijden gespeeld.
+          <br/><br/>
+          Het adres van zwembad ‘it Gryn’ is:<br/>
+          Ieleane 1<br/>
+          9051 LP Stiens<br/>
+          Tel. (058) 257 2400<br/><br/>
+          Klik <a target="_blank" href="https://www.bvsport.nl/accommodation/zwembad-it-gryn/">hier</a> om naar de website van het zwembad te gaan.
+        </p>
+      </section>
+
+      <section className="rounded-lg bg-white/80 p-8 shadow-lg">
         <h2>Bestuur</h2>
         <div className="mb-10 overflow-x-auto">
-          <table className="w-full border-collapse text-left text-gray-800">
+          <table className="w-full border-collapse text-left">
             <thead>
               <tr className="border-b border-black/10">
                 <th className="w-[34%] py-3 pr-4 text-sm font-semibold text-[#1a237e]">
@@ -98,8 +119,22 @@ export default function Clubhistorie() {
           </table>
         </div>
 
+        <h2>Vacatures</h2>
+        <p className="mt-4">
+          Voor meer info over de onderstaande vacatures of aanmelding neem contact op met <a href="mailto:info@zvmiddelse.nl">info@zvmiddelse.nl</a>.<br/><br/>
+
+          <strong>Voorzitter</strong><br/>
+          De plek van voorzitter komt binnenkort vrij. Lijkt het je leuk om in een leuk bestuur plaats te nemen?<br/><br/>
+          <strong>Lid sponsorcommissie</strong><br/>
+          We zoeken nog een enthousiast/creatief/betrokken lid of ouder die mee wil denken over sponsoring voor onze zwemvereniging in het algemeen. Er is eens per maand overleg in een gezellige commissie.<br/><br/>
+          Lijken bovenstaande vacatures niet op jou van toepassing, maar wil je toch graag je steentje bijdragen neem dan ook contact op en er wordt altijd een passende functie voor je gevonden.
+        </p>
+        <ContactFormButton/>
+      </section>
+
+      <section id="privacy" className="rounded-lg bg-white/80 p-8 shadow-lg">
         <h2>Privacy, statuten en gedragsregels</h2>
-        <div className="mt-8 space-y-4 text-gray-800">
+        <div className="mt-4 mb-10 space-y-4">
           <p>
             <strong>Privacyverklaring</strong>
             <br />
@@ -116,6 +151,26 @@ export default function Clubhistorie() {
             Voor gedragsregels tijdens trainingen en wedstrijden kunt u het <a href="huishoudelijk-regelement-zvm.doc" target="_blank">Huishoudelijk Regelement</a> raadplegen.
           </p>
         </div>
+      </section>
+
+
+      <section className="rounded-lg bg-white/80 p-8 shadow-lg">
+        <h2>Contactformulier</h2>
+        <p className="mt-4">
+          Heeft u vragen, opmerkingen of wilt u meer informatie over onze vereniging? Vul dan onderstaand contactformulier in en wij nemen zo snel mogelijk contact met u op.
+        </p>
+        <ContactForm />
+      </section>
+
+      <section className="rounded-lg bg-white/80 p-8 shadow-lg">
+        <h2>Vertrouwenspersoon</h2>
+        <p className="mt-4">
+          Onze vertrouwenspersoon, Liset Bosma, staat klaar om te luisteren en te
+          ondersteunen bij eventuele zorgen of problemen. U kunt contact met haar
+          opnemen via het e-mailadres <a href="mailto:vertrouwenspersoon@zvmiddelse.nl">vertrouwenspersoon@zvmiddelse.nl</a>
+          of vul onderstaand formulier in. Alle gesprekken worden vertrouwelijk behandeld.
+        </p>
+        <TrustContactForm />
       </section>
     </PageLayout>
   );

@@ -1,16 +1,17 @@
 import RectangleButton from "@/app/components/rectangle-button";
 import PageHeader from "@/app/components/page-header";
+import PageFooter from "@/app/components/page-footer";
 
 export default function Home() {
   return (
     <>
       <PageHeader/>
-      <div className="diagonal-clip-top-bottom absolute z-10 mt-60 h-[60vh] min-w-screen bg-black opacity-30"></div>
+      <div className="diagonal-clip-top-bottom absolute z-10 mt-60 h-[60vh] min-w-screen bg-black/30"></div>
 
       <div className="grid min-h-screen grid-rows-[20px_1fr_20px] place-items-center pb-20 font-[family-name:var(--font-geist-sans)]">
         <main className="z-11 row-start-2 flex max-w-200 flex-col flex-wrap items-center justify-center gap-8 sm:flex-row">
           <div className="mt-4 mb-6 w-full basis-full pr-10 pl-10">
-            <p className="mr-auto ml-auto max-w-200">
+            <p className="mr-auto ml-auto max-w-200 text-white">
               Welkom op de officiële website van ZV Middelsé. Op deze site kunt u informatie vinden over de afdeling wedstrijdzwemmen van ZV Middelsé, maar ook wat er ondernomen wordt op gebied van waterpolo.
               <br/><br/>
               Binnen onze club vinden we niet alleen prestatie belangrijk, maar ook gezelligheid en plezier. Wij geloven dat als onze leden plezier hebben in de zwemsport, de gezelligheid en prestaties vanzelf volgen.
@@ -42,13 +43,13 @@ export default function Home() {
             href="/heren-dames-waterpolo"
           />
           <RectangleButton
-            text="Triatlon / conditie / techniek"
+            text="Triatlon - conditie - techniek"
             subtext="Voor alle niveaus"
             href="/triatlon-conditie-techniek"
           />
           <RectangleButton
             text="Contact en info"
-            subtext="En privacy"
+            subtext="Privacy en vertrouwenspersoon"
             href="/contact-en-info"
           />
           <RectangleButton
@@ -58,26 +59,7 @@ export default function Home() {
           />
         </main>
       </div>
-      <footer className="diagonal-clip-top w-full bg-black p-10 opacity-30">
-        <div className="mx-auto max-w-4xl">
-          <img
-            src="/zvm-beeldlogo.svg"
-            alt="ZV Middelsé beeldlogo"
-            className="mx-auto -mb-4 h-32"
-          />
-          <nav className="mt-8 flex justify-center gap-6">
-            <a href="/about" className="hover:underline">
-              Over
-            </a>
-            <a href="/contact" className="hover:underline">
-              Contact
-            </a>
-            <a href="/privacy" className="hover:underline">
-              Privacybeleid
-            </a>
-          </nav>
-        </div>
-      </footer>
+      <PageFooter />
     </>
   );
 }
