@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Contact en Info" };
 
-export default function Clubhistorie() {
+export default function ContactEnInfo() {
   return (
     <PageLayout>
       <section className="rounded-lg bg-white/80 p-8 shadow-lg">

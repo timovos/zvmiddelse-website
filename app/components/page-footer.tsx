@@ -23,4 +23,3 @@ export default function PageFooter() {
     </footer>
   );
 }
-

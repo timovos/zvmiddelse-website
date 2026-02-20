@@ -1,9 +1,9 @@
 import PageLayout from "@/app/components/page-layout";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Contact en Info" };
+export const metadata: Metadata = { title: "Webshop clubkleding" };
 
-export default function Clubhistorie() {
+export default function WebshopClubkleding() {
   return (
     <PageLayout>
       <section className="rounded-lg bg-white/80 p-8 shadow-lg">

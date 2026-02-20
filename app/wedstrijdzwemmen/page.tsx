@@ -28,7 +28,3 @@ export default function Wedstrijdzwemmen() {
     </PageLayout>
   );
 }
-
-
-
-//18.00 – 19.00	Wedstrijdzwemmen (Sint Annaparochie)
