@@ -20,7 +20,7 @@ export default function Dolfijntjes() {
       <section className="w-full rounded-lg bg-white/80 p-8 shadow-lg">
         <h2 className="mb-2 text-2xl font-bold text-[#1a237e]">Trainingen</h2>
         <p className="mb-4">
-          Zaterdagavond van 12.00u – 13.00u in Stiens.
+          Zaterdagmiddag van 12.00u – 13.00u in Stiens.
         </p>
 
         <h2 className="mb-2 text-2xl font-bold text-[#1a237e]">Kosten</h2>

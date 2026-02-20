@@ -18,7 +18,7 @@ export default function JeugdWaterpolo() {
       <section className="w-full rounded-lg bg-white/80 p-8 shadow-lg">
         <h2 className="mb-2 text-2xl font-bold text-[#1a237e]">Trainingen</h2>
         <p className="mb-4 text-gray-800">
-          Woensdagmiddag van 18.00u – 19.00u in Stiens.
+          Woensdagavond van 18.00u – 19.00u in Stiens.
         </p>
 
         <h2 className="mb-2 text-2xl font-bold text-[#1a237e]">Kosten</h2>

@@ -25,7 +25,7 @@ export default function HerenDamesWaterpolo() {
           <br/><br/>
           Op donderdagavond trainen de heren van 20.30u tot 21.45u in Stiens.
           <br/><br/>
-          Op donderdagavond trainen de heren en dames van 20.30u tot 21.45u in Stiens.
+          Op vrijdagavond trainen de heren en dames van 20.30u tot 21.45u in Stiens.
         </p>
 
         <h2 className="mb-2 text-2xl font-bold text-[#1a237e]">Wedstrijden</h2>
