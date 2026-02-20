@@ -37,7 +37,8 @@ export default function Clubhistorie() {
       <section className="rounded-lg bg-white/80 p-8 shadow-lg">
         <h2>Bestuur</h2>
         <div className="mb-10 overflow-x-auto">
-          <table className="w-full border-collapse text-left">
+          {/* Desktop table */}
+          <table className="hidden w-full border-collapse text-left md:table">
             <thead>
               <tr className="border-b border-black/10">
                 <th className="w-[34%] py-3 pr-4 text-sm font-semibold text-[#1a237e]">
@@ -117,6 +118,25 @@ export default function Clubhistorie() {
               </tr>
             </tbody>
           </table>
+
+          {/* Mobile card layout */}
+          <div className="flex flex-col gap-4 md:hidden">
+            {[
+              { functie: "Voorzitter", naam: "Marcel Bakker", contact: <a href="mailto:voorzitter@zvmiddelse.nl">voorzitter@zvmiddelse.nl</a> },
+              { functie: "Secretaris", naam: "Joyce Havenga", contact: <a href="mailto:secretaris@zvmiddelse.nl">secretaris@zvmiddelse.nl</a> },
+              { functie: "Penningmeester", naam: <><span>Hidde van Alfen</span><br/><span>Saske Haijma</span></>, contact: <><div>Postadres aanvragen via onderstaand mailadres.</div><a href="mailto:penningmeester@zvmiddelse.nl">penningmeester@zvmiddelse.nl</a></> },
+              { functie: "Vertrouwenspersoon SG Middelsé - Skelp", naam: "Liset Bosma", contact: null },
+              { functie: "Algemeen lid en ledenadministratie", naam: "Rixt Jouta", contact: <a href="mailto:ledenadministratie@zvmiddelse.nl">ledenadministratie@zvmiddelse.nl</a> },
+              { functie: "Waterpolosecretariaat", naam: <><div>Geertje Nauta</div><div>Rudie Nauta</div></>, contact: <a href="mailto:waterpolo@zvmiddelse.nl">waterpolo@zvmiddelse.nl</a> },
+              { functie: "Zwemsecretariaat", naam: "VACANT", contact: <a href="mailto:zwemmen@zvmiddelse.nl">zwemmen@zvmiddelse.nl</a> },
+            ].map((item, i) => (
+              <div key={i} className="rounded-lg border border-black/10 p-4">
+                <div className="mb-1 text-sm font-semibold text-[#1a237e]">{item.functie}</div>
+                <div className="mb-1">{item.naam}</div>
+                {item.contact && <div className="text-sm">{item.contact}</div>}
+              </div>
+            ))}
+          </div>
         </div>
 
         <h2>Vacatures</h2>

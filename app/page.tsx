@@ -49,6 +49,11 @@ export default function Home() {
             href="/triatlon-conditie-techniek"
           />
           <RectangleButton
+            text="Webshop clubkleding"
+            subtext="Bestel clubkleding"
+            href="/webshop-clubkleding"
+          />
+          <RectangleButton
             text="Contact en info"
             subtext="Privacy en vertrouwenspersoon"
             href="/contact-en-info"
