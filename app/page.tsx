@@ -6,18 +6,19 @@ export default function Home() {
   return (
     <>
       <PageHeader/>
-      <div className="diagonal-clip-top-bottom absolute z-10 mt-60 h-[60vh] min-w-screen bg-black/30"></div>
 
-      <div className="grid min-h-screen grid-rows-[20px_1fr_20px] place-items-center pb-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="z-11 row-start-2 flex max-w-200 flex-col flex-wrap items-center justify-center gap-8 sm:flex-row">
-          <div className="mt-4 mb-6 w-full basis-full pr-10 pl-10">
-            <p className="mr-auto ml-auto max-w-200 text-white">
-              Welkom op de officiële website van ZV Middelsé. Op deze site kunt u informatie vinden over de afdeling wedstrijdzwemmen van ZV Middelsé, maar ook wat er ondernomen wordt op gebied van waterpolo.
-              <br/><br/>
-              Binnen onze club vinden we niet alleen prestatie belangrijk, maar ook gezelligheid en plezier. Wij geloven dat als onze leden plezier hebben in de zwemsport, de gezelligheid en prestaties vanzelf volgen.
-            </p>
-          </div>
+      <div className="diagonal-clip-top-bottom absolute z-1 mt-60 h-[60vh] min-w-screen bg-black/30"></div>
+      <main className="relative z-11">
+        <div className="mt-4 mb-6 w-full basis-full pr-10 pl-10">
+          <p className="mt-10 mr-auto mb-20 ml-auto max-w-180 text-lg text-white">
+            Welkom op de officiële website van ZV Middelsé. Op deze site kunt u informatie vinden over de afdeling wedstrijdzwemmen van ZV Middelsé, maar ook wat er ondernomen wordt op gebied van waterpolo.
+            <br/><br/>
+            Binnen onze club vinden we niet alleen prestatie belangrijk, maar ook gezelligheid en plezier. Wij geloven dat als onze leden plezier hebben in de zwemsport, de gezelligheid en prestaties vanzelf volgen.
+          </p>
+        </div>
+        <div className="row-start-2 mr-auto mb-16 ml-auto flex max-w-200 flex-col flex-wrap items-center justify-center gap-8 sm:flex-row">
           <RectangleButton
+            id="inhoud"
             text="Dolfijntjes"
             subtext="Direct na het B-diploma"
             href="/dolfijntjes"
@@ -57,8 +58,8 @@ export default function Home() {
             subtext="Steun onze vereniging"
             href="/sponsoring"
           />
-        </main>
-      </div>
+        </div>
+      </main>
       <PageFooter />
     </>
   );
