@@ -20,36 +20,7 @@ export default function Sponsoring() {
       </section>
 
       <section className="rounded-lg bg-white/80 p-8 text-gray-800 shadow-lg">
-        <h2>Wat krijgt u?</h2>
-        <p>Wat krijgt u terug als u lid wordt van de Club van 50?</p>
-        <ul className="mt-4 mb-6 list-disc pl-6">
-          <li className="leading-relaxed">
-            Uiteraard eeuwige roem en dankbaarheid vanuit de vereniging.
-          </li>
-          <li className="leading-relaxed">
-            Vermelding namen leden van de Club van 50 in alle nieuwsbrieven per
-            mail van de vereniging.
-          </li>
-          <li className="leading-relaxed">
-            Vermelding namen leden van de Club van 50 in het plonsboekje begin
-            waterpoloseizoen
-          </li>
-          <li className="leading-relaxed">
-            De namen van de leden van de Club van 50 worden in het zwembad van
-            Stiens vermeld op een speciaal hiervoor vervaardigd bord/doek.
-          </li>
-          <li className="leading-relaxed">
-            De leden van de Club van 50 krijgen een eervolle vermelding op onze
-            website.
-          </li>
-          <li className="leading-relaxed">
-            Voor leden van de Club van 50 wordt aan het einde van het seizoen
-            een gratis borrel avond georganiseerd.
-          </li>
-          <li className="leading-relaxed">
-            Vermelding naam leden programmaboekje zwemwedstrijden in Stiens
-          </li>
-        </ul>
+        <h2>Hoe kunt u de Club van 50 steunen?</h2>
         <p>
           Als u de Zwem-en waterpolovereniging Middelsé met uw lidmaatschap van
           de Club van 50 wilt verblijden, kunt u het machtigingsformulier
