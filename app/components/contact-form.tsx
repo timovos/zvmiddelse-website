@@ -1,9 +1,18 @@
 "use client";
 
+import { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { useUmami } from "next-umami";
 
 export default function ContactForm({ inline = false }: { inline?: boolean }) {
   const [state, handleSubmit] = useForm("mkovvvbp");
+  const umami = useUmami();
+
+  useEffect(() => {
+    if (state.succeeded) {
+      umami.event("contact-form-submit");
+    }
+  }, [state.succeeded, umami]);
 
   return (
     <div

@@ -1,9 +1,18 @@
 "use client";
 
+import { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { useUmami } from "next-umami";
 
 export default function TrustContactForm() {
   const [state, handleSubmit] = useForm("mqkjprea");
+  const umami = useUmami();
+
+  useEffect(() => {
+    if (state.succeeded) {
+      umami.event("trust-contact-form-submit");
+    }
+  }, [state.succeeded, umami]);
 
   if (state.succeeded) {
     return (
