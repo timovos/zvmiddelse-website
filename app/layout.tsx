@@ -44,6 +44,7 @@ export default function RootLayout({
         <UmamiProvider
           websiteId={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ""}
           src={process.env.NEXT_PUBLIC_UMAMI_URL}
+          data-exclude-hash="true"
         >
           {children}
         </UmamiProvider>
