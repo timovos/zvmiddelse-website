@@ -7,6 +7,9 @@ export default function PageHeader() {
         src="/header.jpg"
         alt="Header"
         fill
+        priority
+        sizes="100vw"
+        quality={75}
         className="diagonal-clip-bottom object-cover"
       />
       <div className="bg-background diagonal-clip-top-bottom pointer-events-none absolute inset-0 z-10 mt-20 opacity-60" />
