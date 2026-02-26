@@ -24,7 +24,7 @@ const RectangleButton: React.FC<RectangleButtonProps> = ({ id, text, subtext, hr
     style={{ textDecoration: "none" }}
   >
     <Image
-      src="/header.jpg"
+       src="/header.webp"
       alt=""
       fill
       sizes="320px"

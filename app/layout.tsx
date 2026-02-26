@@ -38,6 +38,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/header.webp"
+          as="image"
+          type="image/webp"
+          fetchPriority="high"
+        />
+      </head>
       <body
         className={`font-[var(--font-raleway)] ${raleway.variable} bg-white antialiased`}
       >

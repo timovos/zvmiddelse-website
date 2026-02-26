@@ -4,10 +4,12 @@ export default function PageHeader() {
   return (
     <header className="relative h-96 w-full overflow-hidden">
       <Image
-        src="/header.jpg"
+        src="/header.webp"
         alt="Header"
         fill
         priority
+        fetchPriority="high"
+        loading="eager"
         sizes="100vw"
         quality={75}
         className="diagonal-clip-bottom object-cover"
