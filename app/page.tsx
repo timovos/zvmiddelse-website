@@ -20,7 +20,7 @@ export default function Home() {
           <RectangleButton
             id="inhoud"
             text="Dolfijntjes"
-            subtext="Direct na het B-diploma"
+            subtext="Direct na het A-diploma"
             href="/dolfijntjes"
           />
           <RectangleButton

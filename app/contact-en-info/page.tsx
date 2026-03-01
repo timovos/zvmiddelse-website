@@ -92,7 +92,7 @@ export default function ContactEnInfo() {
                 <td className="py-3 pr-4 align-top">
                   Algemeen lid en ledenadministratie
                 </td>
-                <td className="py-3 pr-4 align-top">Rixt Jouta</td>
+                <td className="py-3 pr-4 align-top">Marise Reitsma</td>
                 <td className="py-3 align-top">
                   <a href="mailto:ledenadministratie@zvmiddelse.nl">
                     ledenadministratie@zvmiddelse.nl
