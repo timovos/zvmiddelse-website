@@ -17,7 +17,8 @@ export default function Wedstrijdzwemmen() {
       <section className="w-full rounded-lg bg-white/80 p-8 shadow-lg">
         <h2 className="mb-2 text-2xl font-bold text-[#1a237e]">Trainingen</h2>
         <p className="mb-4 text-gray-800">
-          Maandagavond om 18.00 – 19.00 in Sint Annaparochie.
+          Maandagavond om 18.00u – 19.00u in Sint Annaparochie.<br/><br/>
+          Woensdagmiddag van 17.00u tot 18.00u in Stiens voor wedstrijdzwemmers en recreanten.
         </p>
 
         <h2 className="mb-2 text-2xl font-bold text-[#1a237e]">Proeftraining & Lid worden</h2>
