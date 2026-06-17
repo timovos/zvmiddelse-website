@@ -11,11 +11,41 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://zvmiddelse.nl"),
   title: {
-    default: "ZV Middelsé",
-    template: "ZV Middelsé - %s",
+    default: "Zwemmen in Stiens | ZV Middelsé",
+    template: "%s | ZV Middelsé",
   },
-  description: "De zwemvereniging in Stiens & omstreken",
+  description:
+    "ZV Middelsé is dé zwemvereniging in Stiens. Wedstrijdzwemmen, waterpolo en zwemmen voor jong en oud in Stiens en omstreken.",
+  keywords: [
+    "zwemmen in Stiens",
+    "zwemvereniging Stiens",
+    "zwemclub Stiens",
+    "wedstrijdzwemmen Stiens",
+    "waterpolo Stiens",
+    "ZV Middelsé",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "nl_NL",
+    url: "https://zvmiddelse.nl",
+    siteName: "ZV Middelsé",
+    title: "Zwemmen in Stiens | ZV Middelsé",
+    description:
+      "ZV Middelsé is dé zwemvereniging in Stiens. Wedstrijdzwemmen, waterpolo en zwemmen voor jong en oud in Stiens en omstreken.",
+    images: [
+      {
+        url: "/header.webp",
+        width: 1200,
+        height: 630,
+        alt: "Zwemmen in Stiens bij ZV Middelsé",
+      },
+    ],
+  },
   icons: {
     icon: [
       {
@@ -37,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="nl">
       <head>
         <link
           rel="preload"

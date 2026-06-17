@@ -5,7 +5,7 @@ export default function PageHeader() {
     <header className="relative h-96 w-full overflow-hidden">
       <Image
         src="/header.webp"
-        alt="Header"
+        alt="Zwemmen in Stiens bij ZV Middelsé"
         fill
         priority
         fetchPriority="high"
@@ -23,9 +23,9 @@ export default function PageHeader() {
           height={144}
           className="mb-8 h-36 w-auto drop-shadow-lg sm:h-42 lg:h-54"
         />
-        <p className="sm:text-s text-m font-bold text-white uppercase drop-shadow-md lg:text-2xl">
+        <h1 className="sm:text-s text-m font-bold text-white uppercase drop-shadow-md lg:text-2xl">
           De zwemvereniging in Stiens &amp; omstreken
-        </p>
+        </h1>
       </div>
     </header>
   );
